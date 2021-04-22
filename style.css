@@ -1,0 +1,36 @@
+.menu{
+	background-color:#333; /* Färg på menu-baren */
+	height: 5%; /* Höjd på menu baren, duuh */
+	padding-left: 5px; /* Skjuter in texten med 5 pixlar*/
+	width:100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.menu a{ /*För länkarna*/
+	float:left; /* Formatera till vänster */
+	color: #f2f2f2; /* Färg på texten */
+	text-align: center; /* Centrera texten i rutorna */
+	padding:10px 16px; /*För att få länk-rutorna där jag vill ha dem */
+	text-decoration: none; /* Ta bort att länkarna är understrykna */
+	height: 100%;
+}
+.menu a:hover { /* När man håller musen över länkarna */
+	background: #ddd; /* Ändrar bakgrundsfärgen */
+	color: black; /* Ändrar färgen på texten */
+	height: 100%;
+}
+.menu_main{
+	float:left; /* Formatera till vänster */
+	color: #f2f2f2; /* Färg på texten */
+	text-align: center; /* Centrera texten i rutorna */
+	padding:10px 16px; /*För att få länk-rutorna där jag vill ha dem */
+}
+.headerlogo{
+	overflow: hidden;
+	height: 40px;
+}
+.hej{
+	color: red;
+}
