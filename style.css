@@ -1,10 +1,6 @@
 /* NAVBAR */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
-:root {
-  --background: rgba(0, 214, 170, .85);
-}
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -26,7 +22,7 @@ body {
   place-items: center;
 }
 
-/* navigation styles start here */
+/* navigation styles */
 
 header {
   background: #FFFF;
@@ -36,8 +32,6 @@ header {
   width: 100%;
 }
 
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -62,7 +56,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: white;
+  background: black;
   height: 2px;
   width: 2em;
   border-radius: 2px;
@@ -124,6 +118,7 @@ nav a:hover {
 }
 
 .nav-toggle:checked ~ nav a {
+	display:block;
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
@@ -143,9 +138,9 @@ nav a:hover {
   }
   
   nav {
-    // all: unset; /* this causes issues with Edge, since it's unsupported */
+    // all: unset; /* har inte microsoft edge support*/
     
-    /* the following lines are not from my video, but add Edge support */
+    /* fix edge support */
     position: relative;
     text-align: left;
     transition: none;
@@ -193,7 +188,8 @@ nav a:hover {
   }
 }
 .navimg{
-	width: 50px;
+	width: 15%;
+
 }
 
 /* FRONT */
