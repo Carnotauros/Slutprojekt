@@ -1,36 +1,87 @@
-.menu{
-	background-color:#333; /* Färg på menu-baren */
-	height: 5%; /* Höjd på menu baren, duuh */
-	padding-left: 5px; /* Skjuter in texten med 5 pixlar*/
-	width:100%;
-	overflow: hidden;
-	display: flex;
-	justify-content: left;
-	align-items: center;
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
 }
-.menu a{ /*För länkarna*/
-	float:left; /* Formatera till vänster */
-	color: #f2f2f2; /* Färg på texten */
-	text-align: center; /* Centrera texten i rutorna */
-	padding:10px 16px; /*För att få länk-rutorna där jag vill ha dem */
-	text-decoration: none; /* Ta bort att länkarna är understrykna */
-	height: 100%;
+
+.container {
+	width: 80%;
+	margin: 0 auto;
 }
-.menu a:hover { /* När man håller musen över länkarna */
-	background: #ddd; /* Ändrar bakgrundsfärgen */
-	color: black; /* Ändrar färgen på texten */
-	height: 100%;
+
+header {
+  background: #FFFF;
 }
-.menu_main{
-	float:left; /* Formatera till vänster */
-	color: #f2f2f2; /* Färg på texten */
-	text-align: center; /* Centrera texten i rutorna */
-	padding:10px 16px; /*För att få länk-rutorna där jag vill ha dem */
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
 }
-.headerlogo{
-	overflow: hidden;
-	height: 40px;
+
+.name{
+	float:left;
+	padding: 10px 0;
 }
-.hej{
-	color: red;
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 50px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+/* FRONT */
+.esportbg{
+	background-image: url("img/esport.jpg");
+	backround-size: cover;
+	border: black solid 2px;
+	height: 1000px;
+	width: 100%;
 }
