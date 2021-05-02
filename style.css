@@ -1,5 +1,5 @@
 /* NAVBAR */
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600'); /* Få font */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -28,7 +28,7 @@ header {
   background: #FFFF;
   text-align: center;
   position: fixed;
-  z-index: 999;
+  z-index: 999; /*För att se till att den verkligen är högst uppe */
   width: 100%;
 }
 
@@ -193,19 +193,29 @@ nav a:hover {
 }
 
 /* FRONT */
-.esportbg{
+.bgesport{
 	background-image: url("img/esport.jpg");
-	backround-size: cover;
-	border: black solid 2px;
+	background-size: cover;
 	height: 1000px;
-	width: 100%;
+	width: auto;
 }
 .jumbotron{
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.66);
 	border-radius: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 200px;
+	padding-bottom: 200px;
+	color: white;
 }
 .blackbg{
 	background: black;
+}
+.jumbotronfix{
+	padding-top: 200px;
+	padding-bottom: 200px;
+	min-width: 400px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
