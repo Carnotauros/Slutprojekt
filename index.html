@@ -11,50 +11,103 @@
   <title>Blekingelaget</title>
 </head>
 <body>
- <!-- Header -->
-    <header>
-      <!--<img  class="logo" src="img/blekingelagetbanner.png">-->
-      <h1 class="logo">Blekingelaget</h1>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <nav>
-        <ul>
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Spelare</a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Kommande event</a></li>
-        </ul>
-      </nav>
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-      </label>
-    </header> <!-- /header -->
-  <main class="fixpadding"> <!-- Front-->
 
-    <div class="bgesport">
-      <div class="jumbotronfix">
-        <div class="jumbotron">
-          <div class="container text-center">
-            <div class="jumbotronSponsor">
-              <a href="https://okatima.org/"class="okatimaLogo" target="_blank"><img src="img/okatima.jpg" class="sponsorLogo" ></a>
-              <a href="https://xtrfy.com/" class="xtrfyLogo" target="_blank"><img src="img/xtrfy.png" class="sponsorLogo"></a>
-              <a href="http://www.centrumbiografen.se/" class="centrumbiografenLogo" target="_blank"><img src="img/centrumbiografen.png" class="sponsorLogo"></a>
-              <a href="http://digitalfilm.se/" class="DigitalfilmProductionsLogo" target="_blank"><img src="img/digitalfilm.png" class="sponsorLogo"></a>
-              
-            </div>
-            <div><img src="img/logo2.png" class="jumbologo" alt="Blekingelaget logo">
-              <h1>Blekingelaget</h1>
-            </div>
-            
-            <p>Blekingelaget är det lokala Counter-Strike laget som gjort att e-sport är ett känt begrepp i sitt landskap mycket tack vare lagets tidigare bedrifter i Svenska Elitserien</p>
+ <!--
+  ##############
+  #   HEADER   #
+  ##############
+ -->
+ <header>
+  <!--<img  class="logo" src="img/blekingelagetbanner.png">-->
+  <h1 class="logo">Blekingelaget</h1>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav>
+    <ul>
+      <li><a href="#top">Hem</a></li>
+      <li><a href="#">Spelare</a></li>
+      <li><a href="#OmOss">Om oss</a></li>
+      <li><a href="#">Blogg</a></li>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+<!--
+  ####################
+  #   END OF HEADER  #
+  ####################
+-->
+
+<!--
+  #############
+  #   FRONT   #
+  #############
+-->
+<main class="fixpadding" id="top">
+  <div class="bgesport">
+    <div class="jumbotronfix">
+      <div class="jumbotron">
+        <div class="container text-center">
+          <div class="jumbotronSponsor">
+            <a href="https://okatima.org/"class="okatimaLogo" target="_blank"><img src="img/okatima.jpg" class="sponsorLogo" ></a>
+            <a href="https://xtrfy.com/" class="xtrfyLogo" target="_blank"><img src="img/xtrfy.png" class="sponsorLogo"></a>
+            <a href="http://www.centrumbiografen.se/" class="centrumbiografenLogo" target="_blank"><img src="img/centrumbiografen.png" class="sponsorLogo"></a>
+            <a href="http://digitalfilm.se/" class="DigitalfilmProductionsLogo" target="_blank"><img src="img/digitalfilm.png" class="sponsorLogo"></a>
           </div>
+          <div><img src="img/logo2.png" class="jumbologo" alt="Blekingelaget logo">
+            <h1>Blekingelaget</h1>
+          </div>
+
+          <p>Blekingelaget är det lokala Counter-Strike laget som gjort att e-sport är ett känt begrepp i sitt landskap mycket tack vare lagets tidigare bedrifter i Svenska Elitserien</p>
         </div>
       </div>
-
     </div>
-    <div>
+  </div>
+</main>
+  <!--
+    #####################
+    #    END OF FRONT   #
+    #####################
+  -->
 
+  <!--
+    ################
+    #    OM OSS    #
+    ################
+  -->
+  <section class="OmOss" id="OmOss"> <!-- Om oss -->
+    <div class="OmOssContainerLeft">
+      <div class="OmOssInfoContainer">
+        <h1 class="OmOssHeader">Vad är Blekingelaget?</h1> 
+        <img src="img/kvarten.jpg" class="OmOssKvartenImg" alt="bild på kvarten">
+        <p class="OmOssText">Blekingelaget är det lokala Counter-Strike laget som gjort att e-sport är ett känt begrepp i sin kommun mycket tack vare lagets tidigare bedrifter i Svenska Elitserien. Laget tävlar idag enbart i Sverige, men är med i olika kval internationellt för att testa gränserna och se hur långt laget kan ta sig.</p>  
+         
+        <p class="OmOssText">För laget är det väldigt viktigt att hela tiden utvecklas och för att göra detta så måste man utmana sig själva, därför är närvaro på så många event som möjligt ett måste där de kan visa för andra lag att de är ett lag att räkna med.</p>
+
+        <p class="OmOssText">Blekingelaget skapades av Kvarten 2018 då han fick reda på att Svenska Elitserien skulle sätta igång. Han arbetade då som E-sports lärare på Gymnasieskolan Knut Hahn, vilket gjorde det möjligt för honom att hitta talanger lokalt som skulle kunna hjälpa honom att bygga upp det lag som idag krigar för att bli ett etablerat lag i Svenska Elitserien.</p>
+        <h1 class="OmOssHeader">Hur vet jag när ni spelar?</h1>
+        <p class="OmOssText">För att se kommande event kan du kolla vår <a href="blogg.hmtl">blogg</a> eller på kalendern! Våra turneringar streamas ofta på twitch och ibland händer det även att vi är aktiva på våra sociala medier.</p>
+      </div> 
     </div>
-  </main> <!-- /Front -->
+    <div class="OmOssContainerRight">
+      <div class="OmOssMapContainer">
+        <div class="OmOssMap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2219.355312453039!2d15.27055941634638!3d56.202818980676206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4656647d084020a3%3A0xe929fb8182a0b18d!2sKnut%20Hahnsskolan%2C%20Blasius%20K%C3%B6nigsgatan%2027%2C%20372%2035%20Ronneby!3m2!1d56.202872!2d15.272238199999999!5e0!3m2!1ssv!2sse!4v1620057600540!5m2!1ssv!2sse" width="100%" height="100%" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+        </div>
+      </div> 
+      <div class="OmOssKalenderContainer">
+        <div class="OmOssKalender"><iframe src="https://calendar.google.com/calendar/embed?src=sjrm7313b6i2qvmvr9mso7iees%40group.calendar.google.com&ctz=Europe%2FStockholm" style="border: 0" width="100%" height="450px" frameborder="0" scrolling="no"></iframe></div>
+      </div>
+    </div>   
+    
+  </section>
+    <!--
+    #######################
+    #    END OF OM OSS    #
+    #######################
+  -->
+ 
 
   <!-- Optional JavaScript; choose one of the two! -->
 

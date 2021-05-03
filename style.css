@@ -1,5 +1,10 @@
 /* NAVBAR */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600'); /* Få font */
+@font-face { /* Importera font family */
+    font-family: MontserratExtraBold;
+    src: url('font/Montserrat-ExtraBold.ttf');
+}
+
 
 :root{
 	--backgroundcolor: #FFFF; /* Variabel så att jag kan ändra bakgrundsfärgen på headern enkelt */
@@ -132,7 +137,7 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms; /* Out transition */
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) { /* För stora skärmar */
   .nav-toggle-label { 
     display: none; /* Tar bort hamburger toggle för fönster med över 800 px bredd */
   }
@@ -147,7 +152,7 @@ nav a:hover {
   }
   
   nav {
-    // all: unset; /* har inte opera mobile support*/
+    /* all: unset; /* har inte opera mobile support*/
     
     /* fix opera support */
     position: relative;
@@ -220,7 +225,7 @@ nav a:hover {
 	background-color: black;
 	background-image: url("img/esport.jpg");
 	background-size: cover;
-	height: 1000px;
+	height: 1200px;
 	width: auto;
 }
 .jumbotron{
@@ -275,6 +280,52 @@ nav a:hover {
 	padding-right: 5px;
 	width: 100px;
 }
+/* Så att bakgrundsbilden alltid täcker upp hela skärmen */
+@media screen and (min-height: 1400px) {
+	.bgesport{
+		height: 1400px;
+	}
+}
+@media screen and (max-height: 1300px) {
+	.bgesport{
+		height: 1300px;
+	}
+}
+@media screen and (max-height: 1200px) {
+	.bgesport{
+		height: 1200px;
+	}
+}
+@media screen and (max-height: 1100px) {
+	.bgesport{
+		height: 1100px;
+	}
+}
+@media screen and (max-height: 1000px) {
+	.bgesport{
+		height: 1000px;
+	}
+}
+@media screen and (max-height: 900px) {
+	.bgesport{
+		height: 900px;
+	}
+}
+@media screen and (max-height: 800px) {
+	.bgesport{
+		height: 800px;
+	}
+}
+@media screen and (max-height: 700px) {
+	.bgesport{
+		height: 700px;
+	}
+}
+@media screen and (max-height: 600px) {
+	.bgesport{
+		height: 600px;
+	}
+}
 
 /*	
 	##############
@@ -289,6 +340,85 @@ nav a:hover {
 */
 
 
+.OmOss{
+	height: 1000px;
+	background-color: red;
+	display: flex;
+}
+#OmOss{
+
+}
+.OmOssContainerLeft{
+	background-color: black;
+	display: flex;
+	width: 50%;
+	height: 1000px;
+}
+.OmOssContainerRight{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 1000px;
+}
+.OmOssInfoContainer{
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 20px;
+	width: 100%;
+	background-color: black;
+}
+.OmOssHeader{
+	font-family: MontserratExtraBold;
+	color: white;
+}
+.OmOssText{
+	color: white;
+}
+.OmOssKvartenImg{
+	width: 300px;
+	float: right;
+	position: relative;
+	margin: 20px;
+}
+.OmOssKvartenCaption{
+	float: right, bottom;
+}
+.OmOssMapContainer{
+	background-color: black;
+	width: 100%;
+	height: 490px;
+	margin-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+.OmOssMap{
+	width: auto;
+	height: 490px;
+
+}
+.OmOssKalenderContainer{
+	height: 460px;
+	width: 100%;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+.OmOssKalender{
+	width: auto;
+	height: 500px;
+}
+@media screen and (max-width: 850px) {
+	.OmOssContainerRight{
+		display: none;
+	}
+	.OmOssContainerLeft{
+		width: auto;
+	}
+}
 
 /* 
 	###############
