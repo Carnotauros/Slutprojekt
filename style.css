@@ -26,7 +26,11 @@ body {
   place-items: center;
 }
 
-/* navigation styles */
+/* 
+	########
+	#NAVBAR#
+	########
+*/
 
 header {
   background: var(--backgroundcolor);
@@ -197,28 +201,48 @@ nav a:hover {
 
 }
 
-/* FRONT */
+/*	
+	############ 
+	#END OF NAV#
+	############
+*/
+
+/* 	
+	############
+	#FRONT PAGE#
+	############ 
+*/
+
+.fixpadding{
+	width: 100%;
+}
 .bgesport{
+	background-color: black;
 	background-image: url("img/esport.jpg");
 	background-size: cover;
 	height: 1000px;
 	width: auto;
 }
 .jumbotron{
+	display: flex;
 	background: rgba(0,0,0,0.66);
 	border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 200px;
-	padding-bottom: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    margin-top: 100px;
+	padding-bottom: 100px;
 	color: white;
+	width: 100%;
 }
 .blackbg{
 	background: black;
 }
 .jumbotronfix{
-	padding-top: 200px;
-	padding-bottom: 200px;
+	display: flex;
+	justify-content: center;
+	/*padding-top: 200px;
+	padding-bottom: 200px; */
 	min-width: 400px;
 	width: 50%;
 	margin-left: auto;
@@ -228,4 +252,46 @@ nav a:hover {
 	min-width: 100px;
 	width: 25%;
 }
+.jumbotronSponsor{
+	display: grid;
+	justify-content: center;
+	padding-bottom: 15px;
+	/* grid-template-columns: 1fr auto minmax(320px, 80%) 1fr; /* Sätter upp grid */ 
+}
+.okatimaLogo{
+	grid-column: 1 / 2;
+}
+.xtrfyLogo{
+	grid-column: 2 / 3;
+}
+.centrumbiografenLogo{
+	grid-column: 3 / 4;
+}
+.DigitalfilmProductionsLogo{
+	grid-column: 4 / 5;
+}
+.sponsorLogo{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100px;
+}
 
+/*	
+	##############
+ 	#END OF FRONT#
+ 	##############
+ */
+
+/* 
+	########
+	#OM OSS#
+	########
+*/
+
+
+
+/* 
+	###############
+	#END OF OM OSS#
+	###############
+*/
