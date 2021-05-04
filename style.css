@@ -16,7 +16,7 @@
 
 body {
 	margin: 0;
-	background: #222;
+	background: black;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 }
@@ -433,14 +433,14 @@ body {
 	/* Responsiv design */
 	@media screen and (min-width: 1474px){
 		.OmOssTwitter{
-	width: 150px;
-}
-.OmOssInstagram{
-	width: 150px;
-}
-.OmOssFacebook{
-	width: 150px;
-}
+			width: 150px;
+		}
+		.OmOssInstagram{
+			width: 150px;
+		}
+		.OmOssFacebook{
+			width: 150px;
+		}
 	}
 	@media screen and (max-width: 1228px) {
 		.OmOss{
@@ -470,14 +470,14 @@ body {
 			height: 1200px;
 		}
 		.OmOssTwitter{
-	width: 100px;
-}
-.OmOssInstagram{
-	width: 100px;
-}
-.OmOssFacebook{
-	width: 100px;
-}
+			width: 100px;
+		}
+		.OmOssInstagram{
+			width: 100px;
+		}
+		.OmOssFacebook{
+			width: 100px;
+		}
 	}
 	@media screen and (max-width: 1033px) {
 		.OmOss{
@@ -552,3 +552,4 @@ body {
 	#END OF OM OSS#
 	###############
 	*/
+
