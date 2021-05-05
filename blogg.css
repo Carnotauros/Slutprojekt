@@ -16,7 +16,12 @@
 
 body {
 	margin: 0;
-	background: #222;
+	background: black;
+	background-image: url(img/background.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 }
@@ -212,142 +217,119 @@ body {
 	############
 */
 
-/*
-	###############
-	#   SPELARE   #
-	###############
+/* 
+	############
+	#   MAIN   #
+	############
 */
-
-body{
-	background-image: url(img/background.png);
-	background-position: center center;
- 	 background-repeat: no-repeat;
- 	 background-attachment: fixed;
-	 background-size: cover;
-}
-.playercontainerfix{
+.blogcontainer{
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 55px;
-}
-.playercontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #222222;
 	width: 80%;
 	min-width: 300px;
-	display: flex;
+}
+
+.blog{
+	width: 100%;
+	padding:20px;
+	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	justify-content: space-evenly;
-	flex-direction: column;
-	text-align: center;
-	padding-bottom: 55px;
-	background: black;
+	background-color: black;
+	
+}
+.blog h2{
 	color: white;
+	text-decoration: bold;
+}
+.blog h5{
+	color: white;
+	text-decoration: bold;
+}
+.blog p{
+	color: white;
+}
+/* IMAGE CLASSES - DO NOT TOUCH */
+/* size */
+.blogimg-small{
+	width: 200px;
+}
+.blogimg-md{
+	width: 300px;
+}
+.blogimg-large{
+	width: 500px;
+}
+.blogimg-full{
+	width: 100%;
+}
+.blogimg-half{
+	width: 50%;
+}
+/* /size */
 
-}
-.playercontainer h1{
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-.players{
-	display: flex;
-	justify-content: space-evenly;
-	margin: 0;
-	padding: 0;
-}
+/* float */
 
-.players li{
+.blogimg-small-left{
+	width: 200px;
 	float: left;
-	margin-left: 10px;
-	margin-right: 10px;
-	list-style: none;
-	width: 200px;
+}
+.blogimg-md-left{
+	width: 300px;
+	float: left;
+}
+.blogimg-large-left{
+	width: 500px;
+	float: left;
+}
+.blogimg-full-left{
+	width: 100%;
+	float: left;
+}
+.blogimg-half-left{
+	width: 50%;
+	float: left;
+}
 
-}
-.players img{
+.blogimg-small-right{
 	width: 200px;
-	border: 2px gray solid;
+	float: right;
 }
-.players a{
-	margin-left: auto;
-	margin-right: auto;
-	text-decoration: none;
-	text-align: center;
-	font-weight: bold;
-	color: white;
-	font-size: .9em;
+.blogimg-md-right{
+	width: 300px;
+	float: right;
 }
-.sponsorer{
-	display: flex;
-	justify-content: center;
+.blogimg-large-right{
+	width: 500px;
+	float: right;
 }
-.sponsorLogo{
-	padding-left: 5px;
-	padding-right: 5px;
-	width: 100px;
-	margin-right: 10px;
-	margin-left: 10px;
+.blogimg-full-right{
+	width: 100%;
+	float: right;
 }
-@media screen and (max-width: 758px){
-	.sponsorer{
-		display: none;
-	}
-	}
+.blogimg-half-right{
+	width: 50%;
+	float: right;
+}
 
-.coach{
-	display: flex;
-	justify-content: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	align-items: center;
-	line-height: 60px;
-	height: auto;
-}
-.coach h2{
-	padding-left: 10px;
-}
-.spelarelogo{
-	width: 60px;
-	border-radius: 50%;
-	border: 2px solid gray;
-}
-/* Mobilversion */
-.playersmobile{
-	display:none;
-}
-@media screen and (max-width: 1390px){
-	.players{
-		display: none;
-	}
-	.playersmobile{
-		display: flex;
-		justify-content: center;
-	}
-	.playercontainerfix{
-		padding-top: 40px;
-	}
-	.carousel-inner{
-		width: 500px;
-	}
-}
-@media screen and (max-width: 758px){
-	.playercontainer{
-		width: auto;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.playercontainerfix{
-		width: auto;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.carousel-inner{
+/* / IMAGE CLASSES */
+
+/* Responsivitet */
+@media screen and (max-width: 800px){
+	.blog{
 		width: 100%;
 	}
 }
-/* / Mobilversion */
 
-/* 
-	################
-	#END OF SPELARE#
-	################
+/*
+	#################
+	#  END OF MAIN  #
+	#################
 */
 
 /*
@@ -382,11 +364,6 @@ body{
 	}
 	.linemobile{
 		display: block;
-	}
-}
-@media screen and (max-width: 755px){
-	.footer-wrapper{
-		width: 100%;
 	}
 }
 .socials{

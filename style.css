@@ -342,7 +342,7 @@ body {
 
 
 	.OmOss{
-		height: 1000px;
+		height: auto;
 		background-color: red;
 		display: flex;
 		min-width: 600px;
@@ -355,14 +355,14 @@ body {
 		display: flex;
 		flex-direction: column;
 		width: 50%;
-		height: 1000px;
+		height: auto;
 	}
 	.OmOssContainerRight{
 		background-color: black;
 		display: flex;
 		flex-direction: column;
 		width: 50%;
-		height: 1000px;
+		height: auto;
 	}
 	.OmOssInfoContainer{
 		padding-top: 50px;
@@ -423,88 +423,7 @@ body {
 		justify-content: space-evenly;
 		flex: 1 1 auto;
 	}
-	.OmOssTwitter{
-		width: 100px;
-	}
-	.OmOssInstagram{
-		width: 100px;
-	}
-	.OmOssFacebook{
-		width: 100px;
-	}
 	/* Responsiv design */
-	@media screen and (min-width: 1474px){
-		.OmOssTwitter{
-			width: 150px;
-		}
-		.OmOssInstagram{
-			width: 150px;
-		}
-		.OmOssFacebook{
-			width: 150px;
-		}
-	}
-	@media screen and (max-width: 1228px) {
-		.OmOss{
-			height: 1200px;
-		}
-		.OmOssContainerRight{
-			height: 1200px;
-		}
-		.OmOssContainerLeft{
-			height: 1200px;
-		}
-		.OmOssTwitter{
-			width: 150px;
-		}
-		.OmOssInstagram{
-			width: 150px;
-		}
-		.OmOssFacebook{
-			width: 150px;
-		}
-	}
-	@media screen and (max-width: 1068px) {
-		.OmOssContainerRight{
-			height: 1200px;
-		}
-		.OmOssContainerLeft{
-			height: 1200px;
-		}
-		.OmOssTwitter{
-			width: 100px;
-		}
-		.OmOssInstagram{
-			width: 100px;
-		}
-		.OmOssFacebook{
-			width: 100px;
-		}
-	}
-	@media screen and (max-width: 1033px) {
-		.OmOss{
-			height: 1300px;
-		}
-		.OmOssContainerRight{
-			height: 1300px;
-		}
-		.OmOssContainerLeft{
-			height: 1300px;
-		}
-
-	}
-	@media screen and (max-width: 938px) {
-		.OmOss{
-			height: 1400px;
-		}
-		.OmOssContainerRight{
-			height: 1400px;
-		}
-		.OmOssContainerLeft{
-			height: 1400px;
-		}
-
-	}
 	@media screen and (max-width: 850px) {
 		.OmOss{
 			flex-direction: column;
@@ -516,7 +435,7 @@ body {
 		}
 		.OmOssContainerLeft{
 			width: auto;
-			height: 800px;
+			height: auto;
 		}
 	}
 
@@ -531,7 +450,7 @@ body {
 		}
 		.OmOssContainerLeft{
 			width: auto;
-			height: 1300px;
+			height: auto;
 		}
 	}
 	@media screen and (max-width: 435px) {
@@ -554,7 +473,42 @@ body {
 	###############
 	#END OF OM OSS#
 	###############
-	*/
+*/
+
+/*
+	############
+	#   TIPS   #
+	############
+*/
+.tipscontainer{
+	display: flex;
+	width: auto;
+}
+.tips{
+	padding: 20px;
+	margin-top: 30px;
+	padding-left: 50px;
+	width: auto;
+	background-color: #222222;
+}
+	.tips a{
+		color:white;
+		font-weight: bold;
+	}
+	.tips p, h4{
+		color: white;
+	}
+	.tips h1{
+		font-family: MontserratExtraBold;
+		color: white;
+	}
+
+/*
+	###################
+	#   END OF TIPS   #
+	###################
+*/
+
 /*
 	##############
 	#   FOOTER   #
