@@ -78,7 +78,7 @@ body {
 	.nav-toggle-label span::before,
 	.nav-toggle-label span::after {
 		display: block;
-		background: black;
+		background: var(--secondarycolor);
 		height: 2px;
 		width: 2em;
 		border-radius: 2px;
@@ -147,7 +147,7 @@ body {
 	transition: opacity 250ms ease-in-out 250ms; /* Out transition */
 }
 
-@media screen and (min-width: 800px) { /* För stora skärmar */
+@media screen and (min-width: 1355px) { /* För stora skärmar */
 	.nav-toggle-label { 
 		display: none; /* Tar bort hamburger toggle för fönster med över 800 px bredd */
 	}
@@ -585,6 +585,7 @@ body {
 .socials{
 	margin-left: auto;
 	margin-right: auto;
+	display: flex;
 }
 .sociallogo{
 	width: 50px;

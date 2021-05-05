@@ -28,7 +28,7 @@
       <li><a href="index.html#OmOss">Om oss</a></li>
       <li><a href="#top">Blogg</a></li>
       <li><a href="galleri.html">Galleri</a></li>
-      <li></li><img src="img/sun.png" id="switchmode"></li>
+      <li><img src="img/sun.png" id="switchmode"></li>
     </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -136,12 +136,11 @@ USE WHEN ADDING IMAGES
 
   switchmode.onclick = function(){
     document.body.classList.toggle("light-theme");
-    document.getElementById('bgtoggle').classList.toggle("bgesport-light");
     if(document.body.classList.contains("light-theme")){
-      switchmode.src = "img/moon.png"
+      switchmode.src = "img/moon.png";
     }
     else{
-      switchmode.src = "img/sun.png"
+      switchmode.src = "img/sun.png";
     }
   }
 

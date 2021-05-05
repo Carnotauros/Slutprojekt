@@ -55,6 +55,7 @@ body {
 		position: fixed;
 		z-index: 999; /*För att se till att den verkligen är högst uppe */
 		width: 100%;
+		color: var(--secondarycolor);
 	}
 	/* Hamburger toggle */
 	.nav-toggle {
@@ -81,7 +82,7 @@ body {
 	.nav-toggle-label span::before,
 	.nav-toggle-label span::after {
 		display: block;
-		background: black;
+		background: var(--secondarycolor);
 		height: 2px;
 		width: 2em;
 		border-radius: 2px;
@@ -149,7 +150,7 @@ body {
 	transition: opacity 250ms ease-in-out 250ms; /* Out transition */
 }
 
-@media screen and (min-width: 800px) { /* För stora skärmar */
+@media screen and (min-width: 1355px) { /* För stora skärmar */
 	.nav-toggle-label { 
 		display: none; /* Tar bort hamburger toggle för fönster med över 800 px bredd */
 	}
@@ -357,7 +358,7 @@ body {
 	min-width: 300px;
 	margin: 0 auto;
 	padding: 80px 8%;
-	background: black;
+	background: var(--backgroundcolor);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -382,6 +383,7 @@ body {
 .socials{
 	margin-left: auto;
 	margin-right: auto;
+	display: flex;
 }
 .sociallogo{
 	width: 50px;
