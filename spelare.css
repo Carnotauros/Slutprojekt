@@ -226,22 +226,33 @@ body{
 	 background-size: cover;
 }
 .playercontainerfix{
-	padding-top: 200px;
+	padding-top: 55px;
 }
 .playercontainer{
 	width: 80%;
+	min-width: 300px;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	justify-content: space-evenly;
-	background: white;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 55px;
+	background: black;
+	color: white;
 
 }
+.playercontainer h1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 .players{
-	display: inline-block;
+	display: flex;
+	justify-content: space-evenly;
 	margin: 0;
 	padding: 0;
 }
+
 .players li{
 	float: left;
 	margin-left: 10px;
@@ -252,14 +263,50 @@ body{
 }
 .players img{
 	width: 200px;
+	border: 2px gray solid;
 }
 .players a{
 	margin-left: auto;
 	margin-right: auto;
 	text-decoration: none;
 	text-align: center;
-	color: black;
+	font-weight: bold;
+	color: white;
 	font-size: .9em;
+}
+.sponsorer{
+	display: flex;
+	justify-content: center;
+}
+.sponsorLogo{
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+@media screen and (max-width: 758px){
+	.sponsorer{
+		display: none;
+	}
+	}
+
+.coach{
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	align-items: center;
+	line-height: 60px;
+	height: auto;
+}
+.coach h2{
+	padding-left: 10px;
+}
+.spelarelogo{
+	width: 60px;
+	border-radius: 50%;
+	border: 2px solid gray;
 }
 /* Mobilversion */
 .playersmobile{
@@ -271,16 +318,96 @@ body{
 	}
 	.playersmobile{
 		display: flex;
+		justify-content: center;
+	}
+	.playercontainerfix{
+		padding-top: 40px;
+	}
+	.carousel-inner{
+		width: 500px;
+	}
+}
+@media screen and (max-width: 758px){
+	.playercontainer{
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.playercontainerfix{
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.carousel-inner{
+		width: 200px;
 	}
 }
 /* / Mobilversion */
-
-/* MOBILVERSION - GÖR OM BILDER TILL "CYKLE/KARUSELL" - PÅBÖRJAD
- KOM IHÅG ATT UPPDATERA SPELARE TILL AKTUELLA SPELARE, SAMT FIXA FORMATTERING ETC.
- OM DU LÄSER MINA REMINDERS TILL MIG SJÄLV, HEJ ALEXANDRA!! */
 
 /* 
 	################
 	#END OF SPELARE#
 	################
+*/
+
+/*
+	##############
+	#   FOOTER   #
+	##############
+*/
+
+.footer-wrapper{
+	color: white;
+	width: 80%;
+	min-width: 300px;
+	margin: 0 auto;
+	padding: 80px 8%;
+	background: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.line{
+	margin-left: auto;
+	margin-right: auto;
+}
+.linemobile{
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+@media screen and (max-width: 850px){
+	.line{
+		display: none;
+	}
+	.linemobile{
+		display: block;
+	}
+}
+@media screen and (max-width: 755px){
+	.footer-wrapper{
+		width: 100%;
+	}
+}
+.socials{
+	margin-left: auto;
+	margin-right: auto;
+}
+.sociallogo{
+	width: 50px;
+	border: white solid 2px;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.copyright{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+/* 
+	###################
+	#  END OF FOOTER  #
+	###################
 */

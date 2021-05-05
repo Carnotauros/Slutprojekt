@@ -227,6 +227,7 @@ body {
 		background-size: cover;
 		height: 1200px;
 		width: auto;
+		min-width: 600px;
 	}
 	.jumbotron{
 		display: flex;
@@ -344,6 +345,7 @@ body {
 		height: 1000px;
 		background-color: red;
 		display: flex;
+		min-width: 600px;
 	}
 	#OmOss{
 
@@ -506,21 +508,22 @@ body {
 	@media screen and (max-width: 850px) {
 		.OmOss{
 			flex-direction: column;
-			height: 1100px;
+			height: auto;
 		}
 		.OmOssContainerRight{
 			width: auto;
+			height: auto;
 		}
 		.OmOssContainerLeft{
 			width: auto;
-			height: 1100px;
+			height: 800px;
 		}
 	}
 
 	@media screen and (max-width: 525px) {
 		.OmOss{
 			flex-direction: column;
-			height: 1300px;
+			height: auto;
 		}
 		.OmOssContainerRight{
 			width: auto;
@@ -534,7 +537,7 @@ body {
 	@media screen and (max-width: 435px) {
 		.OmOss{
 			flex-direction: column;
-			height: 1400px;
+			height: auto;
 		}
 		.OmOssContainerRight{
 			width: auto;
@@ -542,7 +545,7 @@ body {
 		}
 		.OmOssContainerLeft{
 			width: auto;
-			height: 1400px;
+			height: auto;
 		}
 	}
 	/* / Responsiv design */
@@ -552,4 +555,60 @@ body {
 	#END OF OM OSS#
 	###############
 	*/
+/*
+	##############
+	#   FOOTER   #
+	##############
+*/
+
+.footer-wrapper{
+	color: white;
+	width: 80%;
+	min-width: 600px;
+	margin: 0 auto;
+	padding: 80px 8%;
+	background: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.line{
+	margin-left: auto;
+	margin-right: auto;
+}
+.linemobile{
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+@media screen and (max-width: 850px){
+	.line{
+		display: none;
+	}
+	.linemobile{
+		display: block;
+	}
+}
+.socials{
+	margin-left: auto;
+	margin-right: auto;
+}
+.sociallogo{
+	width: 50px;
+	border: white solid 2px;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.copyright{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+/* 
+	###################
+	#  END OF FOOTER  #
+	###################
+*/
 
