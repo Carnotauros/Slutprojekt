@@ -277,6 +277,7 @@ body{
 .sponsorer{
 	display: flex;
 	justify-content: center;
+	padding-top: 20px;
 }
 .sponsorLogo{
 	padding-left: 5px;

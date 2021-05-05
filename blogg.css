@@ -7,7 +7,14 @@
 
 
 :root{
-	--backgroundcolor: #FFFF; /* Variabel så att jag kan ändra bakgrundsfärgen på headern enkelt */
+	--backgroundcolor: black; /* Variabel så att jag kan ändra bakgrundsfärgen ennkelt */
+	--secondarycolor: white;
+	--thirdcolor:  #222222;
+}
+.light-theme{
+	--backgroundcolor: white;
+	--secondarycolor: black;
+	--thirdcolor: lightgray;
 }
 
 *, *::before, *::after {
@@ -16,7 +23,7 @@
 
 body {
 	margin: 0;
-	background: black;
+	background: var(--backgroundcolor);
 	background-image: url(img/background.png);
 	background-size: cover;
 	background-position: center center;
@@ -120,7 +127,7 @@ body {
 	}
 
 	nav a {
-		color: black;
+		color: var(--secondarycolor);
 		text-decoration: none; /* Så att länkarna inte får konstig formattering */
 		font-size: 1.2rem;
 		text-transform: uppercase;
@@ -129,7 +136,7 @@ body {
 	}
 
 	nav a:hover {
-		color: #000; /* Byter färg till svart */
+		color: var(--secondarycolor); /* Byter färg till svart */
 	}
 
 	.nav-toggle:checked ~ nav { /* När toggleboxen är ikryssad, används för mobile-toggle | ~ betyder att det är en "sibling" */
@@ -150,6 +157,7 @@ body {
 	header {
 		display: grid;
 		grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; /* Sätter upp grid */
+		color: var(--secondarycolor);
 	}
 
 	.logo {
@@ -173,6 +181,7 @@ body {
 		display: flex;
 		justify-content: flex-end; /* Få det på högersidan */
 		align-items: center; /* Centrerat */
+		color: var(--secondarycolor);
 	}
 
 	nav ul {
@@ -206,6 +215,10 @@ body {
 		transform: scale(1,1);
 	}
 }
+#switchmode{
+	width: 30px;
+	cursor: pointer;
+}
 .navimg{ /* Experiment */
 	width: 15%;
 
@@ -229,7 +242,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #222222;
+	background-color: var(--thirdcolor);
 	width: 80%;
 	min-width: 300px;
 }
@@ -240,19 +253,19 @@ body {
 	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: black;
+	background-color: var(--backgroundcolor);
 	
 }
 .blog h2{
-	color: white;
+	color: var(--secondarycolor);
 	text-decoration: bold;
 }
 .blog h5{
-	color: white;
+	color: var(--secondarycolor);
 	text-decoration: bold;
 }
 .blog p{
-	color: white;
+	color: var(--secondarycolor);
 }
 /* IMAGE CLASSES - DO NOT TOUCH */
 /* size */
@@ -339,7 +352,7 @@ body {
 */
 
 .footer-wrapper{
-	color: white;
+	color: var(--secondarycolor);
 	width: 80%;
 	min-width: 300px;
 	margin: 0 auto;

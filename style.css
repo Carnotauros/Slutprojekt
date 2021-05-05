@@ -7,7 +7,15 @@
 
 
 :root{
-	--backgroundcolor: #FFFF; /* Variabel så att jag kan ändra bakgrundsfärgen på headern enkelt */
+	--backgroundcolor: black; /* Variabel så att jag kan ändra bakgrundsfärgen ennkelt */
+	--secondarycolor: white;
+	--thirdcolor:  #222222;
+
+}
+.light-theme{
+	--backgroundcolor: white;
+	--secondarycolor: black;
+	--thirdcolor: lightgray;
 }
 
 *, *::before, *::after {
@@ -16,7 +24,7 @@
 
 body {
 	margin: 0;
-	background: black;
+	background: var(--backgroundcolor);
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 }
@@ -43,6 +51,7 @@ body {
 		position: fixed;
 		z-index: 999; /*För att se till att den verkligen är högst uppe */
 		width: 100%;
+		color: var(--secondarycolor);
 	}
 	/* Hamburger toggle */
 	.nav-toggle {
@@ -101,6 +110,7 @@ body {
 		transform: scale(1, 0); /* Så att baren inte syns när boxen inte är ikryssad */
 		transform-origin: top; /* Så att transitionen börjar från toppen */
 		transition: transform 400ms ease-in-out; /*Så att det blir en dropdown */
+		color: var(--secondarycolor);
 	}
 
 	nav ul {
@@ -115,7 +125,7 @@ body {
 	}
 
 	nav a {
-		color: black;
+		color: var(--secondarycolor);
 		text-decoration: none; /* Så att länkarna inte får konstig formattering */
 		font-size: 1.2rem;
 		text-transform: uppercase;
@@ -201,6 +211,10 @@ body {
 		transform: scale(1,1);
 	}
 }
+#switchmode{
+	width: 30px;
+	cursor: pointer;
+}
 .navimg{ /* Experiment */
 	width: 15%;
 
@@ -222,12 +236,20 @@ body {
 		width: 100%;
 	}
 	.bgesport{
-		background-color: black;
+		background-color: var(--backgroundcolor);
 		background-image: url("img/esport.jpg");
 		background-size: cover;
 		height: 1200px;
 		width: auto;
-		min-width: 600px;
+		min-width: 300px;
+	}
+	.bgesport-light{
+		background-color: var(--backgroundcolor);
+		background-image: url("img/lightbackground.png");
+		background-size: cover;
+		height: 1200px;
+		width: auto;
+		min-width: 300px;
 	}
 	.jumbotron{
 		display: flex;
@@ -237,6 +259,7 @@ body {
 		padding-right: 10px;
 		padding-top: 100px;
 		margin-top: 100px;
+		margin-bottom: 30px;
 		padding-bottom: 100px;
 		color: white;
 		width: 100%;
@@ -249,7 +272,7 @@ body {
 		justify-content: center;
 	/*padding-top: 200px;
 	padding-bottom: 200px; */
-	min-width: 400px;
+	min-width: 300px;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -259,7 +282,7 @@ body {
 	width: 25%;
 }
 .jumbotronSponsor{
-	display: grid;
+	display: flex;
 	justify-content: center;
 	padding-bottom: 15px;
 	/* grid-template-columns: 1fr auto minmax(320px, 80%) 1fr; /* Sätter upp grid */ 
@@ -279,7 +302,15 @@ body {
 .sponsorLogo{
 	padding-left: 5px;
 	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	width: 100px;
+}
+@media screen and (max-width: 830px){
+	.jumbotronSponsor{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 /* Så att bakgrundsbilden alltid täcker upp hela skärmen */
 @media screen and (min-height: 1400px) {
@@ -327,6 +358,14 @@ body {
 		height: 600px;
 	}
 }
+@media screen and (max-width: 500px) {
+	.bgesport{
+		height: auto;
+	}
+	.jumbotron{
+		height: auto;
+	}
+}
 
 /*	
 	##############
@@ -343,22 +382,22 @@ body {
 
 	.OmOss{
 		height: auto;
-		background-color: red;
+		background-color: var(--backgroundcolor);
 		display: flex;
-		min-width: 600px;
+		min-width: 300px;
 	}
 	#OmOss{
 
 	}
 	.OmOssContainerLeft{
-		background-color: black;
+		background-color: var(--backgroundcolor);
 		display: flex;
 		flex-direction: column;
 		width: 50%;
 		height: auto;
 	}
 	.OmOssContainerRight{
-		background-color: black;
+		background-color: var(--backgroundcolor);
 		display: flex;
 		flex-direction: column;
 		width: 50%;
@@ -369,18 +408,18 @@ body {
 		padding-left: 50px;
 		padding-right: 20px;
 		width: 100%;
-		background-color: black;
+		background-color: var(--backgroundcolor);
 	}
 	.OmOssInfoContainer a{
-		color:white;
+		color: var(--secondarycolor);
 		font-weight: bold;
 	}
 	.OmOssInfoContainer p{
-		color: white;
+		color: var(--secondarycolor);
 	}
 	.OmOssInfoContainer h1{
 		font-family: MontserratExtraBold;
-		color: white;
+		color: var(--secondarycolor);
 	}
 	.OmOssKvartenImg{
 		width: 300px;
@@ -392,7 +431,7 @@ body {
 		float: right, bottom;
 	}
 	.OmOssMapContainer{
-		background-color: black;
+		background-color: var(--backgroundcolor);
 		width: 100%;
 		height: 490px;
 		margin-bottom: 20px;
@@ -489,18 +528,18 @@ body {
 	margin-top: 30px;
 	padding-left: 50px;
 	width: auto;
-	background-color: #222222;
+	background-color: var(--thirdcolor);
 }
 	.tips a{
-		color:white;
+		color: var(--secondarycolor);
 		font-weight: bold;
 	}
 	.tips p, h4{
-		color: white;
+		color: var(--secondarycolor);
 	}
 	.tips h1{
 		font-family: MontserratExtraBold;
-		color: white;
+		color: var(--secondarycolor);
 	}
 
 /*
@@ -516,12 +555,12 @@ body {
 */
 
 .footer-wrapper{
-	color: white;
+	color: var(--secondarycolor);
 	width: 80%;
-	min-width: 600px;
+	min-width: 300px;
 	margin: 0 auto;
 	padding: 80px 8%;
-	background: black;
+	background: var(--backgroundcolor);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

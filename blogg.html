@@ -27,7 +27,8 @@
       <li><a href="spelare.html">Spelare</a></li>
       <li><a href="index.html#OmOss">Om oss</a></li>
       <li><a href="#top">Blogg</a></li>
-      <li><a href="#">Galleri</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+      <li></li><img src="img/sun.png" id="switchmode"></li>
     </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -115,6 +116,7 @@ USE WHEN ADDING IMAGES
     <a href="https://www.facebook.com/blekingelaget/"><img src="img/facebook.png" class="sociallogo"></a>
     <a href="https://www.instagram.com/blekingelaget/"><img src="img/instagram.png" class="sociallogo"></a>
     <a href="https://twitter.com/blekingelaget"><img src="img/twitter.png" class="sociallogo"></a>
+    <a href="https://youtube.com/channel/UCFjshxh8-A8f3YaKthRa8Rg"><img src="img/youtube.png" class="sociallogo"></a>
   </div>
   <div class="copyright">
     <p>© Leon Runfors 2021.</p>
@@ -127,6 +129,23 @@ USE WHEN ADDING IMAGES
   # END OF FOOTER #
   #################
 -->
+<!-- DARK MODE -->
+<script type="text/javascript">
+  
+  var switchmode = document.getElementById("switchmode");
+
+  switchmode.onclick = function(){
+    document.body.classList.toggle("light-theme");
+    document.getElementById('bgtoggle').classList.toggle("bgesport-light");
+    if(document.body.classList.contains("light-theme")){
+      switchmode.src = "img/moon.png"
+    }
+    else{
+      switchmode.src = "img/sun.png"
+    }
+  }
+
+</script>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
