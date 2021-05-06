@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -28,6 +28,7 @@
       <li><a href="index.html#OmOss">Om oss</a></li>
       <li><a href="blogg.html">Blogg</a></li>
       <li><a href="galleri.html">Galleri</a></li>
+      <li><img src="img/sun.png" id="switchmode" alt="toggletheme"></li>
     </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -50,37 +51,37 @@
   <div class="playercontainerfix">
     <div class="playercontainer">
       <div class="sponsorer">
-       <a href="https://okatima.org/"class="okatimaLogo" target="_blank"><img src="img/okatima.jpg" class="sponsorLogo" ></a>
-       <a href="https://xtrfy.com/" class="xtrfyLogo" target="_blank"><img src="img/xtrfy.png" class="sponsorLogo"></a>
-       <a href="http://www.centrumbiografen.se/" class="centrumbiografenLogo" target="_blank"><img src="img/centrumbiografen.png" class="sponsorLogo"></a>
-       <a href="http://digitalfilm.se/" class="DigitalfilmProductionsLogo" target="_blank"><img src="img/digitalfilm.png" class="sponsorLogo"></a>
+       <a href="https://okatima.org/" class="okatimaLogo" target="_blank"><img src="img/okatima.jpg" class="sponsorLogo" alt="okatimalogo"></a>
+       <a href="https://xtrfy.com/" class="xtrfyLogo" target="_blank"><img src="img/xtrfy.png" class="sponsorLogo" alt="xtrfylogo"></a>
+       <a href="http://www.centrumbiografen.se/" class="centrumbiografenLogo" target="_blank"><img src="img/centrumbiografen.png" class="sponsorLogo" alt="centrumbiografen"></a>
+       <a href="http://digitalfilm.se/" class="DigitalfilmProductionsLogo" target="_blank"><img src="img/digitalfilm.png" class="sponsorLogo" alt="DigitalfilmProductionsLogo"></a>
      </div>
-     <h1>Blekingelagets spelare</h1>
+     <h1>Våran spelfemma</h1>
      <ul class="players">
       <li>
         <a href="">Saknas</a>
         <br>
-        <img src="img/spelare/spelare2/missing3.png">
+        <img src="img/spelare/spelare2/missing3.png" alt="emptyplayerbanner">
       </li>
       <li>
         <a href="">Pontus "dp" Andersson</a>
         <br>
-        <img src="img/spelare/spelare2/dp.png">
+        <img src="img/spelare/spelare2/dp.png" alt="dpplayerbanner">
       </li>
       <li>
         <a href="">Mathias "kvarten" Nilsson</a>
         <br>
-        <img src="img/spelare/spelare2/kvarten.png">
+        <img src="img/spelare/spelare2/kvarten.png" alt="mathiasnilssonbanner">
       </li>
       <li>
         <a href="">Saknas</a>
         <br>
-        <img src="img/spelare/spelare2/missing3.png">
+        <img src="img/spelare/spelare2/missing3.png" alt="emptyplayerbanner">
       </li>
       <li>
         <a href="">Saknas</a>
         <br>
-        <img src="img/spelare/spelare2/missing3.png">
+        <img src="img/spelare/spelare2/missing3.png" alt="emptyplayerbanner">
       </li>
     </ul>
    
@@ -125,8 +126,8 @@
          SLUT PÅ MOBILVERSION
          #################### --> 
       <div class="coach">
-      <img src="img/blekingelagetlogo.png" class="spelarelogo">
-      <h2></h2>
+      <img src="img/blekingelagetlogo.png" class="spelarelogo" alt="blekingelagetlogo" >
+     <!-- Plats för coachnamn <h2></h2> -->
     </div>
   </div>
 </div>
@@ -149,10 +150,10 @@
     <div class="line"><p>_______________________________________________________________________</p></div>
     <div class="linemobile"><p>_______________________________</p></div>
     <div class="socials">
-    <a href="https://www.facebook.com/blekingelaget/"><img src="img/facebook.png" class="sociallogo"></a>
-    <a href="https://www.instagram.com/blekingelaget/"><img src="img/instagram.png" class="sociallogo"></a>
-    <a href="https://twitter.com/blekingelaget"><img src="img/twitter.png" class="sociallogo"></a>
-    <a href="https://youtube.com/channel/UCFjshxh8-A8f3YaKthRa8Rg"><img src="img/youtube.png" class="sociallogo"></a>
+    <a href="https://www.facebook.com/blekingelaget/"><img src="img/facebook.png" class="sociallogo" alt="facebooklogo"></a>
+    <a href="https://www.instagram.com/blekingelaget/"><img src="img/instagram.png" class="sociallogo" alt="instgramlogo"></a>
+    <a href="https://twitter.com/blekingelaget"><img src="img/twitter.png" class="sociallogo" alt="twitterlogo"></a>
+    <a href="https://youtube.com/channel/UCFjshxh8-A8f3YaKthRa8Rg"><img src="img/youtube.png" class="sociallogo" alt="youtubelogo"></a>
   </div>
   <div class="copyright">
     <p>© Leon Runfors 2021.</p>
@@ -165,6 +166,22 @@
   # END OF FOOTER #
   #################
 -->
+<!-- DARK MODE -->
+<script type="text/javascript">
+  
+  var switchmode = document.getElementById("switchmode");
+
+  switchmode.onclick = function(){
+    document.body.classList.toggle("light-theme");
+    if(document.body.classList.contains("light-theme")){
+      switchmode.src = "img/moon.png";
+    }
+    else{
+      switchmode.src = "img/sun.png";
+    }
+  }
+
+</script>
 
 <!-- Optional JavaScript; choose one of the two! -->
 

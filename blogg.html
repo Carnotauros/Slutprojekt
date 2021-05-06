@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -28,7 +28,7 @@
       <li><a href="index.html#OmOss">Om oss</a></li>
       <li><a href="#top">Blogg</a></li>
       <li><a href="galleri.html">Galleri</a></li>
-      <li><img src="img/sun.png" id="switchmode"></li>
+      <li><img src="img/sun.png" id="switchmode" alt="modechanger"></li>
     </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -69,14 +69,15 @@ class names:
 USE WHEN ADDING IMAGES
 -->
 <main>
+  <div class="main">
   <div class="blogcontainer">
     <div class="blog">
       <h2>TITLE HEADING</h2>
       <h5>TIitle description, Date</h5>
-      <img src="img/background.png" class="blogimg-full">
+      <img src="img/background.png" class="blogimg-full" alt="exempelbild för blogg/nyheterfunktionen">
       <br>
-      <p>some text</p>
-      <p> anca pulco</p>
+      <p>Jag gjorde en bild</p>
+      <p>Den blev inte så bra</p>
 
     </div>
     <div class="blog">
@@ -94,6 +95,10 @@ USE WHEN ADDING IMAGES
       <p> anca pulco</p>
     </div>
   </div>
+  <div class="timeline">
+   <a class="twitter-timeline" data-height="600" data-theme="dark" href="https://twitter.com/blekingelaget?ref_src=twsrc%5Etfw" id="themeSwitch">Tweets by blekingelaget</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
 </main>
 
 <!-- 
@@ -113,10 +118,10 @@ USE WHEN ADDING IMAGES
     <div class="line"><p>_______________________________________________________________________</p></div>
     <div class="linemobile"><p>_______________________________</p></div>
     <div class="socials">
-    <a href="https://www.facebook.com/blekingelaget/"><img src="img/facebook.png" class="sociallogo"></a>
-    <a href="https://www.instagram.com/blekingelaget/"><img src="img/instagram.png" class="sociallogo"></a>
-    <a href="https://twitter.com/blekingelaget"><img src="img/twitter.png" class="sociallogo"></a>
-    <a href="https://youtube.com/channel/UCFjshxh8-A8f3YaKthRa8Rg"><img src="img/youtube.png" class="sociallogo"></a>
+    <a href="https://www.facebook.com/blekingelaget/"><img src="img/facebook.png" class="sociallogo" alt="facebook logo"></a>
+    <a href="https://www.instagram.com/blekingelaget/"><img src="img/instagram.png" class="sociallogo" alt="instagram logo"></a>
+    <a href="https://twitter.com/blekingelaget"><img src="img/twitter.png" class="sociallogo" alt="twitter logo"></a>
+    <a href="https://youtube.com/channel/UCFjshxh8-A8f3YaKthRa8Rg"><img src="img/youtube.png" class="sociallogo" alt="youtube logo"></a>
   </div>
   <div class="copyright">
     <p>© Leon Runfors 2021.</p>
@@ -142,6 +147,9 @@ USE WHEN ADDING IMAGES
     else{
       switchmode.src = "img/sun.png";
     }
+    document.getElementById('themeSwitch').addEventListener('change', function(event){
+  (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+});
   }
 
 </script>
